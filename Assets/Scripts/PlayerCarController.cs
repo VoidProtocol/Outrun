@@ -5,6 +5,7 @@ public class PlayerCarController : MonoBehaviour
 {
     [Header("Setup:")]
     [SerializeField] private SpawnRoads _spawnRoads;
+
     [Header("Config:")]
     [SerializeField] private float _carDefaultSpeed = 200.0f;
     [SerializeField] private float _carMaxSpeed = 600.0f;
@@ -61,10 +62,17 @@ public class PlayerCarController : MonoBehaviour
 
     private void OnTriggerEnter(Collider collider)
     {
-        if (collider.transform.parent.name == ConstLibrary.Roads)
+        if (collider.transform.parent != null)
         {
-            // Move last road foward
-            _spawnRoads.SpawnTriggerEntered();
+            if (collider.transform.parent.name == ConstLibrary.Roads)
+            {
+                // Move last road foward
+                _spawnRoads.SpawnTriggerEntered();
+            }
+        }
+        if (collider.transform.name == ConstLibrary.FinishLine)
+        {
+            Debug.Log("You're Winner!");
         }
     }
 
