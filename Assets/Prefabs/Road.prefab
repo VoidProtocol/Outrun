@@ -11,13 +11,12 @@ GameObject:
   - component: {fileID: 3277398078156740055}
   - component: {fileID: 3277398078156740052}
   - component: {fileID: 3277398078156740053}
-  - component: {fileID: 3277398078156740054}
   m_Layer: 0
   m_Name: Road3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &3277398078156740055
 Transform:
@@ -80,19 +79,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &3277398078156740054
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3277398078156740040}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 6.0000005, y: 0, z: 3.8}
-  m_Center: {x: 0, y: 0.08, z: 0}
 --- !u!1 &3277398078161316252
 GameObject:
   m_ObjectHideFlags: 0
@@ -104,13 +90,12 @@ GameObject:
   - component: {fileID: 3277398078161316251}
   - component: {fileID: 3277398078161316248}
   - component: {fileID: 3277398078161316249}
-  - component: {fileID: 3277398078161316250}
   m_Layer: 0
   m_Name: Road4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &3277398078161316251
 Transform:
@@ -173,19 +158,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &3277398078161316250
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3277398078161316252}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 6.0000005, y: 0, z: 3.8}
-  m_Center: {x: 0, y: 0.08, z: 0}
 --- !u!1 &3277398079247186756
 GameObject:
   m_ObjectHideFlags: 0
@@ -197,13 +169,12 @@ GameObject:
   - component: {fileID: 3277398079247186755}
   - component: {fileID: 3277398079247186752}
   - component: {fileID: 3277398079247186753}
-  - component: {fileID: 3277398079247186754}
   m_Layer: 0
   m_Name: Road2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &3277398079247186755
 Transform:
@@ -266,19 +237,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &3277398079247186754
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3277398079247186756}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 6.0000005, y: 0, z: 3.8}
-  m_Center: {x: 0, y: 0.08, z: 0}
 --- !u!1 &3277398079720429378
 GameObject:
   m_ObjectHideFlags: 0
@@ -290,13 +248,12 @@ GameObject:
   - component: {fileID: 3277398079720429377}
   - component: {fileID: 3277398079720429390}
   - component: {fileID: 3277398079720429391}
-  - component: {fileID: 3277398079720429376}
   m_Layer: 0
   m_Name: Road5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &3277398079720429377
 Transform:
@@ -359,19 +316,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &3277398079720429376
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3277398079720429378}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 6.0000005, y: 0, z: 3.8}
-  m_Center: {x: 0, y: 0.08, z: 0}
 --- !u!1 &3552361421197101627
 GameObject:
   m_ObjectHideFlags: 0
@@ -381,8 +325,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 595895616503877744}
+  - component: {fileID: 223441155480792136}
   m_Layer: 0
-  m_Name: Road 1
+  m_Name: Road
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -395,9 +340,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3552361421197101627}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.2, y: 1, z: 1}
   m_Children:
   - {fileID: 5826954188084317453}
   - {fileID: 3277398079247186755}
@@ -407,6 +352,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &223441155480792136
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3552361421197101627}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 6, y: 0, z: 31}
+  m_Center: {x: 0, y: 0.1, z: 12}
 --- !u!1 &7796337774684978889
 GameObject:
   m_ObjectHideFlags: 0
@@ -418,13 +376,12 @@ GameObject:
   - component: {fileID: 5826954188084317453}
   - component: {fileID: 1379364623786337930}
   - component: {fileID: 4789123458594168015}
-  - component: {fileID: 7796337774684978888}
   m_Layer: 0
   m_Name: Road1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &5826954188084317453
 Transform:
@@ -487,16 +444,3 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &7796337774684978888
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7796337774684978889}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 6.0000005, y: 0.01, z: 3.8}
-  m_Center: {x: 0, y: 0.08, z: 0}
