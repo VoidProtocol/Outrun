@@ -3,6 +3,8 @@
 [RequireComponent(typeof(Rigidbody))]
 public class PlayerCarController : MonoBehaviour
 {
+    [Header("Setup:")]
+    [SerializeField] private SpawnRoads _spawnRoads;
     [Header("Config:")]
     [SerializeField] private float _carDefaultSpeed = 200.0f;
     [SerializeField] private float _carMaxSpeed = 600.0f;
@@ -54,6 +56,15 @@ public class PlayerCarController : MonoBehaviour
         {
             CarTurning(DirectionOfCarTurning.Right);
             CarSlowing();
+        }
+    }
+
+    private void OnTriggerEnter(Collider collider)
+    {
+        if (collider.transform.parent.name == ConstLibrary.Roads)
+        {
+            // Move last road foward
+            _spawnRoads.SpawnTriggerEntered();
         }
     }
 
