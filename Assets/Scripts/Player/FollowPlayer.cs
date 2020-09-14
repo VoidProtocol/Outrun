@@ -2,7 +2,7 @@
 
 public class FollowPlayer : MonoBehaviour
 {
-    [SerializeField] private Vector3 _offset;
+    [SerializeField] private Vector3 _offset = Vector3.zero;
 
     private void Update()
     {

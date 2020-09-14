@@ -2,7 +2,7 @@
 using UnityEngine;
 
 [RequireComponent(typeof(TextMeshProUGUI))]
-public class ShowCarSpeed : MonoBehaviour
+public class TextManipulation : MonoBehaviour
 {
     private TextMeshProUGUI _textMeshProComponent;
 
@@ -11,8 +11,10 @@ public class ShowCarSpeed : MonoBehaviour
         _textMeshProComponent = GetComponent<TextMeshProUGUI>();
     }
 
-    private void Update()
+    public void GameOverScreenText()
     {
-        _textMeshProComponent.text = PlayerCarController.GetCarSpeed.ToString();
+        _textMeshProComponent.text = "Tap to Play Again";
+        _textMeshProComponent.rectTransform.anchoredPosition = new Vector3(0.0f, -400.0f, 0.0f);
     }
 }
+

@@ -3,9 +3,6 @@
 [RequireComponent(typeof(Rigidbody))]
 public class PlayerCarController : MonoBehaviour
 {
-    [Header("Setup:")]
-    [SerializeField] private SpawnRoads _spawnRoads;
-
     [Header("Config:")]
     [SerializeField] private float _carDefaultSpeed = 200.0f;
     [SerializeField] private float _carMaxSpeed = 600.0f;
@@ -18,13 +15,11 @@ public class PlayerCarController : MonoBehaviour
 
     private static Vector3 _playersCarPosition;
     private static float _currentCarSpeed;
-    private static bool _isScreenTouched = false;
     private Rigidbody _rigidbody;
     private float _currentTurningSpeed = 0.0f;
 
     public static Vector3 GetPlayersCarPosition { get { return _playersCarPosition; } }
     public static float GetCarSpeed { get { return _currentCarSpeed; } }
-    public static bool GetIsScreenTouched { get { return _isScreenTouched; } }
 
     private void Awake()
     {
@@ -32,23 +27,11 @@ public class PlayerCarController : MonoBehaviour
         _currentCarSpeed = _carDefaultSpeed;
     }
 
-    private void Update()
-    {
-        if (Input.touchCount > 0 || Input.GetKey("a"))
-        {
-            _isScreenTouched = true;
-        }
-        else
-        {
-            _isScreenTouched = false;
-        }
-    }
-
     private void FixedUpdate()
     {
         _playersCarPosition = _rigidbody.position;
 
-        if (_isScreenTouched)
+        if (InputManager.GetTouchPress && GameManager.GetIsGameStartedAtLeastOnce)
         {
             CarTurning(DirectionOfCarTurning.Left);
             CarAccelerating();
@@ -57,22 +40,6 @@ public class PlayerCarController : MonoBehaviour
         {
             CarTurning(DirectionOfCarTurning.Right);
             CarSlowing();
-        }
-    }
-
-    private void OnTriggerEnter(Collider collider)
-    {
-        if (collider.transform.parent != null)
-        {
-            if (collider.transform.parent.name == ConstLibrary.Roads)
-            {
-                // Move last road foward
-                _spawnRoads.SpawnTriggerEntered();
-            }
-        }
-        if (collider.transform.name == ConstLibrary.FinishLine)
-        {
-            Debug.Log("You're Winner!");
         }
     }
 

@@ -2,12 +2,11 @@
 
 public class FinishLineController : MonoBehaviour
 {
-    [SerializeField] private float _distanceFromPlayer;
-    [SerializeField] private bool _isGameStarted = false;
+    [SerializeField] private float _distanceFromPlayer = 30.0f;
 
     private void Update()
     {
-        if (!_isGameStarted)
+        if (!GameManager.GetIsGameStartedAtLeastOnce)
         {
             MoveFinishLine();
         }
