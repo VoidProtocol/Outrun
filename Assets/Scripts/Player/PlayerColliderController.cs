@@ -35,13 +35,14 @@ public class PlayerColliderController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        _enableRoadColliders.EnableAllRoadColliders();
-
-        _rigidbody.useGravity = true;
-        _rigidbody.constraints = RigidbodyConstraints.None;
-
-        if (collision.gameObject.TryGetComponent<Rigidbody>(out _collidedRigidbody) && collision.gameObject.name == "DeathWall")
+        if (collision.gameObject.TryGetComponent<Rigidbody>(out _collidedRigidbody) && 
+            collision.gameObject.CompareTag(ConstLibrary.EnemyCarLeftLane))
         {
+            _enableRoadColliders.EnableAllRoadColliders();
+
+            _rigidbody.useGravity = true;
+            _rigidbody.constraints = RigidbodyConstraints.None;
+
             _collidedRigidbody.useGravity = true;
             _collidedRigidbody.constraints = RigidbodyConstraints.None;
 

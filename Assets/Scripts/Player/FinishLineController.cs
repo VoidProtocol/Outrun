@@ -4,6 +4,11 @@ public class FinishLineController : MonoBehaviour
 {
     [SerializeField] private float _distanceFromPlayer = 30.0f;
 
+    private void Awake()
+    {
+        transform.position = new Vector3(transform.position.x, transform.position.y, _distanceFromPlayer + PlayerCarController.GetPlayersCarPosition.z);
+    }
+
     private void Update()
     {
         if (!GameManager.GetIsGameStartedAtLeastOnce)
