@@ -72,5 +72,10 @@ public enum PoolObject
     Car3 = 2,
     CarTaxi = 3,
     Bus1 = 4,
-    Bus2 = 5
+    Bus2 = 5,
+    Building1 = 6,
+    Building2 = 7,
+    Building3 = 8,
+    Building4 = 9,
+    Building5 = 10,
 }

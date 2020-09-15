@@ -14,11 +14,11 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        if (InputManager.GetTouchTap && !_isGameStartedAtLeastOnce)
+        if (InputManager.GetTouchPress && !_isGameStartedAtLeastOnce)
         {
             StartGame();
         }
-        if (InputManager.GetTouchTap && _isGameOver)
+        if (InputManager.GetTouchPress && _isGameOver)
         {
             Restart();
         }
